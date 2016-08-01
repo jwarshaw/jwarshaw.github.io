@@ -3,33 +3,43 @@ body {
 }
 
 h2 { 
-	font-family: ;
+	font-family: "Times New Roman", Times, serif;
+	margin-top: 5px;
+}
+
+section {
+	margin-top: 40px;
+	border-top: 1px solid black;
+}
+
+a.visited {
+	color: #3333cc;
 }
 
 #page-title {
 	background-image: url(images/pidgeon.png);
-	font-size: 3.0em;
+	font-size: 2.5em;
 	font-family: ;
 	color: white;
-	padding: 100px 0px 0px 850px;
-	margin-bottom: 100px; 
+	padding-left: 10px;
+	margin-bottom: 50px; 
 }
 
 .narrative {
-	font-size: 1.2em;
-	font-family: ;
+	font-size: 1.0em;
+	font-family: "Arial Black", Gadget, sans-serif
 }
 
 .caption {
-	font-size: 1.0em;
+	font-size: .8em;
 	font-style: italic;
-	font-family: ;
+	font-family: Verdana, Geneva, sans-serif;
 }
 
 #quote {
 	font-weight: bold;
 	font-size: 1.2em;
-	font-family: "Bodoni MT", serif;
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
 }
 
 form {
@@ -45,8 +55,8 @@ form {
 }
 
 /*
-Padding and border added to at least one element
-Margin added to at least one element
+X Padding and border added to at least one element
+X Margin added to at least one element
 X At least one centered element (a footer message can be nice for this)
 X A background image on at least one element
 X A different font on at least one element
