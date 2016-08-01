@@ -2,6 +2,14 @@ body {
 	width: 95%;
 }
 
+a:link, a:hover a:active {
+	color: blue;
+}
+
+a:visited {
+	color: green;
+}
+
 h2 { 
 	font-family: "Times New Roman", Times, serif;
 	margin-top: 5px;
@@ -26,14 +34,6 @@ th, td{
 }
 th {
 	background-color: #b3ccff;
-}
-
-a.link {
-	color: blue;
-}
-
-a.visited {
-	color: green;
 }
 
 #page-title {
