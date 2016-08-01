@@ -9,7 +9,7 @@ h2 {
 
 section {
 	margin-top: 40px;
-	border-top: 1px solid black;
+	border-top: 10px solid #436964;
 }
 
 table, th, td {
@@ -50,6 +50,10 @@ a.visited {
 	font-size: .8em;
 	font-style: italic;
 	font-family: Verdana, Geneva, sans-serif;
+}
+
+#diagram {
+	border: 1px solid gray;
 }
 
 #quote {
