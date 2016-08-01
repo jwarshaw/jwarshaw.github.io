@@ -2,6 +2,14 @@ body {
 	width: 95%;
 }
 
+a:link, a:hover a:active {
+	color: blue;
+}
+
+a:visited {
+	color: green;
+}
+
 h2 { 
 	font-family: "Times New Roman", Times, serif;
 	margin-top: 5px;
@@ -9,7 +17,7 @@ h2 {
 
 section {
 	margin-top: 40px;
-	border-top: 1px solid black;
+	border-top: 10px solid #436964;
 }
 
 table, th, td {
@@ -28,14 +36,10 @@ th {
 	background-color: #b3ccff;
 }
 
-a.visited {
-	color: #3333cc;
-}
-
 #page-title {
 	background-image: url(images/pidgeon.png);
 	font-size: 2.5em;
-	font-family: ;
+	font-family: "Arial Black", Gadget, sans-serif;
 	color: white;
 	padding-left: 10px;
 	margin-bottom: 50px; 
@@ -50,6 +54,10 @@ a.visited {
 	font-size: .8em;
 	font-style: italic;
 	font-family: Verdana, Geneva, sans-serif;
+}
+
+#diagram {
+	border: 1px solid gray;
 }
 
 #quote {
