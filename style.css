@@ -12,6 +12,22 @@ section {
 	border-top: 1px solid black;
 }
 
+table, th, td {
+   border: 1px solid black;
+}
+table {
+	border-collapse: collapse;
+	width: 100%;
+}
+
+th, td{
+    height: 50px;
+    text-align: center;
+}
+th {
+	background-color: #b3ccff;
+}
+
 a.visited {
 	color: #3333cc;
 }
@@ -48,9 +64,9 @@ form {
 	text-align: center;
 }
 
-@media screen and (max-width: 500px) {
-  body {
-    ;
+@media screen and (min-width: 768px) {
+  #table-page {
+    width: 60%;
   }
 }
 
@@ -63,5 +79,5 @@ X A different font on at least one element
 X A few elements styled using a class
 A different color for visited links
 X An element styled with an ID
-Add at least one media query to improve the responsiveness of your page.
+X Add at least one media query to improve the responsiveness of your page.
 */
