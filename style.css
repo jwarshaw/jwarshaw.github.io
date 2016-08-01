@@ -1,3 +1,67 @@
 body {
-	background-color: #dab3ff;
+	width: 95%;
 }
+
+h2 { 
+	font-family: "Times New Roman", Times, serif;
+	margin-top: 5px;
+}
+
+section {
+	margin-top: 40px;
+	border-top: 1px solid black;
+}
+
+a.visited {
+	color: #3333cc;
+}
+
+#page-title {
+	background-image: url(images/pidgeon.png);
+	font-size: 2.5em;
+	font-family: ;
+	color: white;
+	padding-left: 10px;
+	margin-bottom: 50px; 
+}
+
+.narrative {
+	font-size: 1.0em;
+	font-family: "Arial Black", Gadget, sans-serif
+}
+
+.caption {
+	font-size: .8em;
+	font-style: italic;
+	font-family: Verdana, Geneva, sans-serif;
+}
+
+#quote {
+	font-weight: bold;
+	font-size: 1.2em;
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+}
+
+form {
+	display: block;
+	margin: 0 auto;
+	text-align: center;
+}
+
+@media screen and (max-width: 500px) {
+  body {
+    ;
+  }
+}
+
+/*
+X Padding and border added to at least one element
+X Margin added to at least one element
+X At least one centered element (a footer message can be nice for this)
+X A background image on at least one element
+X A different font on at least one element
+X A few elements styled using a class
+A different color for visited links
+X An element styled with an ID
+Add at least one media query to improve the responsiveness of your page.
+*/
