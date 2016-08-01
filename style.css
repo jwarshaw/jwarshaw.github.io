@@ -28,8 +28,12 @@ th {
 	background-color: #b3ccff;
 }
 
+a.link {
+	color: blue;
+}
+
 a.visited {
-	color: #3333cc;
+	color: green;
 }
 
 #page-title {
