@@ -1,0 +1,12 @@
+.Contact {
+  text-align: center;
+  padding: 20px;
+  height: 100vh;
+}
+.contact-content {
+	height: 300px;
+	width: 500px;
+	margin: 0px auto;
+	padding: 10px;
+  text-align: left;
+}
