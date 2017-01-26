@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './style.css';
-import Form from '../Form/index.js'
+import ContactForm from '../Form/index.js'
 
 export default class Contact extends Component {
   // static propTypes = {}
@@ -11,7 +11,7 @@ export default class Contact extends Component {
     return (
       <div className='Contact'>
         <div className="contact-content">
-          <Form />
+          <ContactForm />
         </div>
       </div>
     );
