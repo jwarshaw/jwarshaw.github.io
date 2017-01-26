@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './style.css';
 
-export default class Form extends React.Component {
+export default class Form extends Component {
   constructor(props) {
     super(props)
     this.state = {name: '', email: '',  message: ''};
@@ -26,6 +26,30 @@ export default class Form extends React.Component {
 
   handleSubmit(event) {
     event.preventDefault();
+
+    var contactData = { 
+      contact: {
+        name: this.state.name,
+        email: this.state.email,
+        message: this.state.message
+      }
+    };
+
+    $.ajax({
+      url: '/contact',
+      dataType: 'json',
+      type: 'POST',
+      data: contactData,
+      success: function(data) {
+        console.log("success");
+        if (data.status === 200) this.resetState();
+        this.setState({result: data.result});
+      }.bind(this),
+      error: function(xhr, status, err) {
+        this.setState({data: contactData});
+        console.log("error");
+      }.bind(this)
+    });
   }
 
   render() {
