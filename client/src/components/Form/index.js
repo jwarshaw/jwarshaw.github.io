@@ -1,16 +1,23 @@
-import { Component } from 'react';
+import React, { Component } from 'react';
 import './style.css';
 
 export default class Form extends React.Component {
-  getInitialState: function() {
-    return {firstName: ''};
-  },
-  handleNameChange: function(event) {
+  constructor(props) {
+    super(props)
+    this.state = {name: ''};
+  
+    this.handleNameChange = this.handleNameChange.bind(this);
+    this.handleSubmit = this.handleSubmit.bind(this);
+  }
+
+  handleNameChange(event) {
     this.setState({name: event.target.value});
-  },
+  }
+
   handleSubmit(event) {
     event.preventDefault();
   }
+
   render() {
     return (
       <form onSubmit={this.handleSubmit}>
