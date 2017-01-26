@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './style.css';
+import $ from 'jquery';
 
 export default class Form extends Component {
   constructor(props) {
@@ -47,7 +48,7 @@ export default class Form extends Component {
       }.bind(this),
       error: function(xhr, status, err) {
         this.setState({data: contactData});
-        console.log("error");
+        console.error("error");
       }.bind(this)
     });
   }
