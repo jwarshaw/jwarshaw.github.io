@@ -4,10 +4,11 @@ import './style.css';
 export default class Form extends React.Component {
   constructor(props) {
     super(props)
-    this.state = {name: '', email: ''};
+    this.state = {name: '', email: '',  message: ''};
   
     this.handleNameChange = this.handleNameChange.bind(this);
     this.handleEmailChange = this.handleEmailChange.bind(this);
+    this.handleMessageChange = this.handleMessageChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
   }
 
@@ -17,6 +18,10 @@ export default class Form extends React.Component {
 
   handleEmailChange(event) {
     this.setState({email: event.target.value});
+  }
+
+  handleMessageChange(event) {
+    this.setState({message: event.target.value});
   }
 
   handleSubmit(event) {
@@ -33,6 +38,10 @@ export default class Form extends React.Component {
         <label>
           Email:
           <input type="email" value={this.state.email} onChange={this.handleEmailChange} />
+        </label>
+        <label>
+          Message:
+          <textarea value={this.state.value} onChange={this.handleMessageChange} />
         </label>
         <input type="submit" value="Submit" />
       </form>
