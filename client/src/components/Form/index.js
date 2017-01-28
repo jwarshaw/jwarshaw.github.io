@@ -44,14 +44,14 @@ export default class Form extends Component {
       success: function(data) {
         console.log("success");
         if (data.status === 200) this.resetState();
-        this.setState({result: data.result});
       }.bind(this),
       error: function(xhr, status, err) {
-        this.setState({data: contactData});
-        console.error("error");
+        console.error(status, err.toString());
       }.bind(this)
     });
   }
+
+
 
   render() {
     return (
