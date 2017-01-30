@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './style.css';
-import $ from 'jquery';
+// import $ from 'jquery';
 
 export default class Form extends Component {
   constructor(props) {
@@ -36,22 +36,29 @@ export default class Form extends Component {
       }
     };
 
-    $.ajax({
-      url: '/contact',
-      dataType: 'json',
-      type: 'POST',
-      data: contactData,
-      success: function(data) {
-        console.log("success");
-        if (data.status === 200) this.resetState();
-      }.bind(this),
-      error: function(xhr, status, err) {
-        console.error(status, err.toString());
-      }.bind(this)
-    });
+    fetch('/api/contact', {
+      headers: {
+        'Accept': 'application/json',
+        'Content-Type': 'application/json'
+      },
+      method: 'POST',
+      body: JSON.stringify(contactData)
+    }).then(console.log('Fetch request sent'));
+
+    // $.ajax({
+    //   url: '/api/contact',
+    //   dataType: 'json',
+    //   type: 'POST',
+    //   data: contactData,
+    //   success: function(data) {
+    //     console.log("success");
+    //     if (data.status === 200) this.resetState();
+    //   }.bind(this),
+    //   error: function(xhr, status, err) {
+    //     console.error(status, err.toString());
+    //   }.bind(this)
+    // });
   }
-
-
 
   render() {
     return (
