@@ -1,6 +1,5 @@
 const express = require('express');
 const app = express();
-const path = require('path');
 
 app.set('port', (process.env.PORT || 3001));
 
@@ -14,5 +13,5 @@ app.post('/api/contact', (req, res) => {
 })
 
 app.listen(app.get('port'), () => {
-  console.log(`Find the server at: http://localhost:${app.get('port')}/`);
+  console.log('Find the server at: http://localhost:${app.get('port')}/');
 })
