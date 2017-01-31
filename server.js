@@ -1,4 +1,15 @@
 const express = require('express');
+const nodemailer = require('nodemailer');
+const dotenv = require('dotenv');
+const bodyParser = require('body-parser');
+
+dotenv.config({ silent: true});
+
+const user = process.env.EMAIL_USER;
+const pass = process.env.EMAIL_PASS;
+const host = process.env.EMAIL_HOST;
+const port = process.env.EMAIL_PORT;
+
 const app = express();
 
 app.set('port', (process.env.PORT || 3001));
@@ -7,9 +18,43 @@ if (process.env.NODE_ENV === 'production') {
   app.use(express.static('client/build'));
 }
 
-app.post('/api/contact', (req, res) => {
+// app.use(bodyParser.urlencoded({ extended: false }))
+
+app.use(bodyParser.json())
+
+app.post('/api/contact', (req, res, next) => {
 	console.log('hit server');
-  res.send('POST request to the contact page');
+	console.log('req.body...');
+  console.log(req.body);
+
+  var smtpConfig = {
+    host: host,
+    port: port,
+    secure: true,
+    auth: {
+      user: user,
+      pass: pass
+    }
+  };
+
+  var transporter = nodemailer.createTransport(smtpConfig);
+  
+  var mailOptions = {
+    from: req.body.email,
+    to: user,
+    subject: 'Website contact form',
+    text: req.body.message
+  };
+
+  transporter.sendMail(mailOptions, function(error, info){
+    if(error){
+    	console.log(error);
+      return false;
+    }else{
+      console.log('Message sent: ' + info.response);
+      return true;
+    };
+  });
 })
 
 app.listen(app.get('port'), () => {
