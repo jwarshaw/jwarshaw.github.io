@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { IndexLink, Link } from 'react-router';
 import './style.css';
 
 import linkedin from '../../images/linkedin.png';
