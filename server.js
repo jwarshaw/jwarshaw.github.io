@@ -9,6 +9,10 @@ const user = process.env.EMAIL_USER;
 const pass = process.env.EMAIL_PASS;
 const host = process.env.EMAIL_HOST;
 const port = process.env.EMAIL_PORT;
+const clientId = process.env.CLIENT_ID;
+const clientSecret = process.env.CLIENT_SECRET;
+const refreshToken = process.env.REFRESH_TOKEN;
+const accessToken = process.env.ACCESS_TOKEN;
 
 const app = express();
 
@@ -32,8 +36,13 @@ app.post('/api/contact', (req, res, next) => {
     port: port,
     secure: true,
     auth: {
-      user: user,
-      pass: pass
+      XOAuth2: {
+        user: 'jonathan.warshaw@gmail.com',
+        clientId: clientId,
+        clientSecret: clientSecret,
+        refreshToken: refreshToken,
+        accessToken: accessToken
+      }
     }
   };
 
@@ -41,7 +50,7 @@ app.post('/api/contact', (req, res, next) => {
   
   var mailOptions = {
     from: req.body.email,
-    to: user,
+    to: 'jonathan.warshaw@gmail.com',
     subject: 'Website contact form',
     text: req.body.message
   };
