@@ -1,6 +1,9 @@
 import React, { Component } from 'react';
 import './style.css';
 
+import Header from '../Header/index.js';
+import Footer from '../Footer/index.js';
+
 import breadboard from '../../images/breadboard.png';
 
 export default class Work extends Component {
