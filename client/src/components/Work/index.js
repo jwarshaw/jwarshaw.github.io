@@ -11,6 +11,9 @@ export default class Work extends Component {
   render() {
     return (
       <div className='Work'>
+        <div>
+          <Header />
+        </div>
         <div className="work-content">
           <ul className="work-list">
             <li className="example">
