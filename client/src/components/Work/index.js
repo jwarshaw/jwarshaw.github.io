@@ -27,6 +27,9 @@ export default class Work extends Component {
             </li>
           </ul>
         </div>
+        <div>
+          <Footer />
+        </div>
       </div>
     );
   }

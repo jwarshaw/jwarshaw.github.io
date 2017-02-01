@@ -15,6 +15,9 @@ class App extends Component {
           <img id="hi" src={hi} alt="Hi." />
           <img id="im-jonathan" src={imJonathan} alt="I'm Jonathan."></img>
         </div>
+        <div>
+          <Footer />
+        </div>
       </div>
     );
   }

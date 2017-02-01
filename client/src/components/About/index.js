@@ -15,6 +15,9 @@ export default class About extends Component {
         <div className="about-content">
           <p>Some stuff about me.</p>
         </div>
+        <div>
+          <Footer />
+        </div>
       </div>
     );
   }

@@ -16,6 +16,9 @@ export default class Contact extends Component {
         <div className="contact-content">
           <ContactForm />
         </div>
+        <div>
+          <Footer />
+        </div>
       </div>
     );
   }
