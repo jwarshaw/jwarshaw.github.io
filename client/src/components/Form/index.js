@@ -1,6 +1,9 @@
 import React, { Component } from 'react';
 import './style.css';
-// import $ from 'jquery';
+
+import name from '../../images/name.png';
+import email from '../../images/email.png';
+import message from '../../images/message.png';
 
 export default class Form extends Component {
   constructor(props) {
@@ -44,35 +47,21 @@ export default class Form extends Component {
       method: 'POST',
       body: JSON.stringify(contactData)
     }).then(console.log('Fetch request sent'));
-
-    // $.ajax({
-    //   url: '/api/contact',
-    //   dataType: 'json',
-    //   type: 'POST',
-    //   data: contactData,
-    //   success: function(data) {
-    //     console.log("success");
-    //     if (data.status === 200) this.resetState();
-    //   }.bind(this),
-    //   error: function(xhr, status, err) {
-    //     console.error(status, err.toString());
-    //   }.bind(this)
-    // });
   }
 
   render() {
     return (
       <form onSubmit={this.handleSubmit}>
         <label>
-          Name:
+          <img src={name} alt='name'></img>
           <input type="text" value={this.state.name} onChange={this.handleNameChange} />
         </label>
         <label>
-          Email:
+          <img src={email} alt='email'></img>
           <input type="email" value={this.state.email} onChange={this.handleEmailChange} />
         </label>
         <label>
-          Message:
+          <img src={message} alt='message'></img>
           <textarea value={this.state.value} onChange={this.handleMessageChange} />
         </label>
         <input type="submit" value="Submit" />
