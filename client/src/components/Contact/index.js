@@ -10,6 +10,9 @@ export default class Contact extends Component {
   render() {
     return (
       <div className='Contact'>
+        <div>
+          <Header />
+        </div>
         <div className="contact-content">
           <ContactForm />
         </div>

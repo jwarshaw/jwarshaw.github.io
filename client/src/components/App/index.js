@@ -8,6 +8,9 @@ class App extends Component {
   render() {
     return (
       <div className="App">
+        <div>
+          <Header />
+        </div>
         <div className="content">
           <img id="hi" src={hi} alt="Hi." />
           <img id="im-jonathan" src={imJonathan} alt="I'm Jonathan."></img>
