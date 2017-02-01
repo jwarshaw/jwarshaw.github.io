@@ -1,0 +1,13 @@
+ul.footer {
+  position: absolute;
+  right: 0px;
+  bottom: 10px;
+  left: 0px;
+  text-align: center;
+}
+ul.footer li {
+  display: inline;
+  list-style-type: none;
+  padding: 0px;
+  margin: 5px;
+}
