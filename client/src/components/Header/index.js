@@ -11,10 +11,10 @@ export default class Header extends Component {
   render() {
     return (
     	<ul className="header">
-    	  <li><IndexLink to="/" activeClassName="active"><img className="navBut" src={home}></img></IndexLink></li>
-        <li><Link to="/about" activeClassName="active"><img className="navBut" src={about}></img></Link></li>
-        <li><Link to="/work" activeClassName="active"><img className="navBut" src={work}></img></Link></li>
-        <li><Link to="/contact" activeClassName="active"><img className="navBut" src={contact}></img></Link></li>
+    	  <li><IndexLink to="/" activeClassName="active"><img className="navBut" src={home} alt='home'></img></IndexLink></li>
+        <li><Link to="/about" activeClassName="active"><img className="navBut" src={about} alt='about'></img></Link></li>
+        <li><Link to="/work" activeClassName="active"><img className="navBut" src={work} alt='work'></img></Link></li>
+        <li><Link to="/contact" activeClassName="active"><img className="navBut" src={contact} alt='contact'></img></Link></li>
       </ul>
     );
   }
