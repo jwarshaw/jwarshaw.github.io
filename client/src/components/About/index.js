@@ -1,6 +1,9 @@
 import React, { Component } from 'react';
 import './style.css';
 
+import Header from '../Header/index.js';
+import Footer from '../Footer/index.js';
+
 export default class About extends Component {
   // static propTypes = {}
   // static defaultProps = {}
@@ -14,6 +17,9 @@ export default class About extends Component {
         </div>
         <div className="about-content">
           <p>Some stuff about me.</p>
+        </div>
+        <div>
+          <Footer />
         </div>
       </div>
     );
