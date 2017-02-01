@@ -3,7 +3,7 @@ import './style.css';
 
 import name from '../../images/name.png';
 import email from '../../images/email.png';
-import message from '../../images/email.png';
+import message from '../../images/message.png';
 
 export default class Form extends Component {
   constructor(props) {
