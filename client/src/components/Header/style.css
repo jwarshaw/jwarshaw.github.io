@@ -1,0 +1,25 @@
+ul.header {
+  /*background-color: rgba(0,0,0,0);*/
+  text-align: right;
+  padding: 0px;
+  margin: 0px auto;
+}
+ul.header li {
+  display: inline;
+  list-style-type: none;
+  padding: 0px;
+}
+ul.header li a {
+  padding: 0px;
+  display: inline-block;
+}
+.active {
+  -webkit-filter : hue-rotate(150deg);
+  filter : hue-rotate(150deg);
+}
+.navBut {
+  height: 28px;
+}
+img {
+	margin: 5px;
+}
