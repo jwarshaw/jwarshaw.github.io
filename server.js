@@ -1,18 +1,20 @@
 const express = require('express');
-const nodemailer = require('nodemailer');
-const dotenv = require('dotenv');
-const bodyParser = require('body-parser');
+const path = require('path');
 
-dotenv.config({ silent: true});
+// const nodemailer = require('nodemailer');
+// const dotenv = require('dotenv');
+// const bodyParser = require('body-parser');
 
-const user = process.env.EMAIL_USER;
-const pass = process.env.EMAIL_PASS;
-const host = process.env.EMAIL_HOST;
-const port = process.env.EMAIL_PORT;
-const clientId = process.env.CLIENT_ID;
-const clientSecret = process.env.CLIENT_SECRET;
-const refreshToken = process.env.REFRESH_TOKEN;
-const accessToken = process.env.ACCESS_TOKEN;
+// dotenv.config({ silent: true});
+
+// const user = process.env.EMAIL_USER;
+// const pass = process.env.EMAIL_PASS;
+// const host = process.env.EMAIL_HOST;
+// const port = process.env.EMAIL_PORT;
+// const clientId = process.env.CLIENT_ID;
+// const clientSecret = process.env.CLIENT_SECRET;
+// const refreshToken = process.env.REFRESH_TOKEN;
+// const accessToken = process.env.ACCESS_TOKEN;
 
 const app = express();
 
@@ -24,47 +26,51 @@ if (process.env.NODE_ENV === 'production') {
 
 // app.use(bodyParser.urlencoded({ extended: false }))
 
-app.use(bodyParser.json())
+// app.use(bodyParser.json())
 
-app.post('/api/contact', (req, res, next) => {
-	console.log('hit server');
-	console.log('req.body...');
-  console.log(req.body);
+app.get('*', (req, res) => {
+  res.sendFile(path.resolve(__dirname, '..', 'build', 'index.html'));
+});
 
-  var smtpConfig = {
-    host: host,
-    port: port,
-    secure: true,
-    auth: {
-      XOAuth2: {
-        user: 'jonathan.warshaw@gmail.com',
-        clientId: clientId,
-        clientSecret: clientSecret,
-        refreshToken: refreshToken,
-        accessToken: accessToken
-      }
-    }
-  };
+// app.post('/api/contact', (req, res, next) => {
+// 	console.log('hit server');
+// 	console.log('req.body...');
+//   console.log(req.body);
 
-  var transporter = nodemailer.createTransport(smtpConfig);
+//   var smtpConfig = {
+//     host: host,
+//     port: port,
+//     secure: true,
+//     auth: {
+//       XOAuth2: {
+//         user: 'jonathan.warshaw@gmail.com',
+//         clientId: clientId,
+//         clientSecret: clientSecret,
+//         refreshToken: refreshToken,
+//         accessToken: accessToken
+//       }
+//     }
+//   };
+
+//   var transporter = nodemailer.createTransport(smtpConfig);
   
-  var mailOptions = {
-    from: req.body.email,
-    to: 'jonathan.warshaw@gmail.com',
-    subject: 'Website contact form',
-    text: req.body.message
-  };
+//   var mailOptions = {
+//     from: req.body.email,
+//     to: 'jonathan.warshaw@gmail.com',
+//     subject: 'Website contact form',
+//     text: req.body.message
+//   };
 
-  transporter.sendMail(mailOptions, function(error, info){
-    if(error){
-    	console.log(error);
-      return false;
-    }else{
-      console.log('Message sent: ' + info.response);
-      return true;
-    };
-  });
-})
+//   transporter.sendMail(mailOptions, function(error, info){
+//     if(error){
+//     	console.log(error);
+//       return false;
+//     }else{
+//       console.log('Message sent: ' + info.response);
+//       return true;
+//     };
+//   });
+// })
 
 app.listen(app.get('port'), () => {
   console.log(`Find the server at: http://localhost:${app.get('port')}/`);
