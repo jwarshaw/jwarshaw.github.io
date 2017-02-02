@@ -5,6 +5,8 @@ import Header from '../Header/index.js';
 import Footer from '../Footer/index.js';
 
 import breadboard from '../../images/breadboard.png';
+import sandbox from '../../images/sandbox.png';
+
 
 export default class Work extends Component {
   // static propTypes = {}
@@ -23,7 +25,7 @@ export default class Work extends Component {
               <img src={breadboard} alt="breadboard"></img>
             </li>
             <li className="example">
-              <img src={breadboard} alt="breadboard"></img>
+              <img src={sandbox} alt="sandbox"></img>
             </li>
             <li className="example">
               <img src={breadboard} alt="breadboard"></img>
