@@ -15,4 +15,9 @@ ul.work-list li {
   padding: 0px;
   margin: 10px;
   display: inline-block;
+  border: 1px solid #b3b3b3;
+}
+
+.work-img {
+  margin: 0.5px;
 }

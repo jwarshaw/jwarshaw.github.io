@@ -4,9 +4,9 @@ import './style.css';
 import Header from '../Header/index.js';
 import Footer from '../Footer/index.js';
 
-import breadboard from '../../images/breadboard.png';
+import car from '../../images/car.png';
 import sandbox from '../../images/sandbox.png';
-
+import calculator from '../../images/calculator.png';
 
 export default class Work extends Component {
   // static propTypes = {}
@@ -22,13 +22,13 @@ export default class Work extends Component {
         <div className="work-content">
           <ul className="work-list">
             <li className="example">
-              <img src={breadboard} alt="breadboard"></img>
+              <img className='work-img' src={car} alt="car"></img>
             </li>
             <li className="example">
-              <img src={sandbox} alt="sandbox"></img>
+              <img className='work-img' src={sandbox} alt="sandbox"></img>
             </li>
             <li className="example">
-              <img src={breadboard} alt="breadboard"></img>
+              <img className='work-img' src={calculator} alt="calculator"></img>
             </li>
           </ul>
         </div>
