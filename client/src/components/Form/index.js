@@ -51,19 +51,31 @@ export default class Form extends Component {
 
   render() {
     return (
-      <form onSubmit={this.handleSubmit}>
-        <label>
-          <img src={name} alt='name'></img>
-          <input type="text" value={this.state.name} onChange={this.handleNameChange} />
-        </label>
-        <label>
-          <img src={email} alt='email'></img>
-          <input type="email" value={this.state.email} onChange={this.handleEmailChange} />
-        </label>
-        <label>
-          <img src={message} alt='message'></img>
-          <textarea value={this.state.value} onChange={this.handleMessageChange} />
-        </label>
+      <form className='contact-form' onSubmit={this.handleSubmit}>
+        <div id='name-wrapper'>
+          <label>
+            <img className='form-img' src={name} alt='name'></img>
+            <br/>
+            <input type="text" value={this.state.name} onChange={this.handleNameChange} />
+          </label>
+        </div>
+        <br/>
+        <div id='email-wrapper'>
+          <label>
+            <img className='form-img' src={email} alt='email'></img>
+            <br/>
+            <input type="email" value={this.state.email} onChange={this.handleEmailChange} />
+          </label>
+        </div>
+        <br/>
+        <div id='message-wrapper'>
+          <label>
+            <img className='form-img' src={message} alt='message'></img>
+            <br/>
+            <textarea value={this.state.value} onChange={this.handleMessageChange} />
+          </label>
+        </div>
+        <br/>
         <input type="submit" value="Submit" />
       </form>
     );
