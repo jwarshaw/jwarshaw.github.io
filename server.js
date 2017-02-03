@@ -1,6 +1,6 @@
 const express = require('express');
 const path = require('path');
-const bodyParser = require('body-parser');
+// const bodyParser = require('body-parser');
 
 // const nodemailer = require('nodemailer');
 // const dotenv = require('dotenv');
@@ -24,12 +24,12 @@ if (process.env.NODE_ENV === 'production') {
   app.use(express.static('client/build'));
 }
 
-app.use(bodyParser.json());
+// app.use(bodyParser.json());
 
-app.use(express.static(path.resolve(__dirname, 'client', 'build')));
+// app.use(express.static(path.resolve(__dirname, 'client', 'build')));
 
 app.get('*', (req, res) => {
-  res.sendFile(path.resolve(__dirname, 'client', 'build', 'index.html'));
+  res.sendFile(path.resolve(__dirname, '..', 'build', 'index.html'));
 });
 
 // app.post('/api/contact', (req, res, next) => {
