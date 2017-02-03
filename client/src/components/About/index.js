@@ -4,6 +4,8 @@ import './style.css';
 import Header from '../Header/index.js';
 import Footer from '../Footer/index.js';
 
+import textwall from '../../images/textwall.png';
+
 export default class About extends Component {
   // static propTypes = {}
   // static defaultProps = {}
@@ -16,7 +18,7 @@ export default class About extends Component {
           <Header />
         </div>
         <div className="about-content">
-          <p>Some stuff about me.</p>
+          <img id='text-wall' src={textwall} alt='wall of text'></img>
         </div>
         <div>
           <Footer />
