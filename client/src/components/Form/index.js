@@ -52,7 +52,7 @@ export default class Form extends Component {
   render() {
     return (
       <form className='contact-form' onSubmit={this.handleSubmit}>
-        <div id='name-wrapper'>
+        <div id='wr-name'>
           <label>
             <img className='form-img' src={name} alt='name'></img>
             <br/>
@@ -60,7 +60,7 @@ export default class Form extends Component {
           </label>
         </div>
         <br/>
-        <div id='email-wrapper'>
+        <div id='wr-email'>
           <label>
             <img className='form-img' src={email} alt='email'></img>
             <br/>
@@ -68,7 +68,7 @@ export default class Form extends Component {
           </label>
         </div>
         <br/>
-        <div id='message-wrapper'>
+        <div id='wr-message'>
           <label>
             <img className='form-img' src={message} alt='message'></img>
             <br/>
@@ -76,7 +76,9 @@ export default class Form extends Component {
           </label>
         </div>
         <br/>
-        <input type="submit" value="Submit" />
+        <div id="wr-submit">
+          <input type="submit" value="Submit" />
+        </div>
       </form>
     );
   }

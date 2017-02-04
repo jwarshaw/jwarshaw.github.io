@@ -1,10 +1,7 @@
 .Work {
   text-align: center;
-  padding: 20px;
-  height: 100vh;
-}
-.work-content {
-  padding-top: 100px;
+  margin-top: 10%;
+  padding: 0px;
 }
 ul.work-list {
   display: inline;
@@ -13,11 +10,11 @@ ul.work-list {
 }
 ul.work-list li { 
   padding: 0px;
-  margin: 10px;
+  margin: 20px;
   display: inline-block;
   border: 1px solid #b3b3b3;
 }
 
 .work-img {
-  margin: 0.5px;
+  margin: 1px;
 }

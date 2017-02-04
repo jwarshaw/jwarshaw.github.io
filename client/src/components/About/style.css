@@ -1,12 +1,14 @@
 .About {
-  text-align: center;
-  padding: 20px;
-  height: 100vh;
+  z-index: -1;
+  margin: 70px 0px 0px 0px;
+  padding: 0px;
+  height: auto;
+  width: 100%;
+  overflow: hidden;
 }
-.about-content {
-  margin: 0px auto;
-  padding-top: 150px;
-}
-#text-wall {
-	
+
+img#text-wall {
+	padding: 0px;
+  height: 800px;
+  width: auto;
 }
