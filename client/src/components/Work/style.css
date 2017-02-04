@@ -6,15 +6,21 @@
 ul.work-list {
   display: inline;
   list-style-type: none;
+  margin: 0px;
   padding: 0px;
 }
 ul.work-list li { 
   padding: 0px;
-  margin: 20px;
+  margin: 0px 20px 0px 20px;
   display: inline-block;
-  border: 1px solid #b3b3b3;
 }
 
+.work-title {
+  display: block;
+  margin: 0 auto;
+}
 .work-img {
-  margin: 1px;
+  margin: 0px;
+  padding: 1px;
+  border: 1px solid #b3b3b3;
 }

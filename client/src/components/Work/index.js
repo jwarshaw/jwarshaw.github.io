@@ -17,17 +17,23 @@ export default class Work extends Component {
     return (
       <div className='Work'>
         <ul className="work-list">
-          <img className='work-title' src={raspberryTitle} alt="raspberry drive"></img>
-          <li className="example">
-            <img className='work-img' src={raspberry} alt="car"></img>
+          <li className="li-project">
+            <div className='div-project'>
+              <img className='work-title' src={raspberryTitle} alt="raspberry drive"></img>
+              <img className='work-img' src={raspberry} alt="car"></img>
+            </div>
           </li>
-          <img className='work-title' src={sandboxTitle} alt="sandbox"></img>
-          <li className="example">
-            <img className='work-img' src={sandbox} alt="sandbox"></img>
+          <li className="li-project">
+            <div className='div-project'>
+              <img className='work-title' src={sandboxTitle} alt="sandbox"></img>
+              <img className='work-img' src={sandbox} alt="sandbox"></img>
+            </div>
           </li>
-          <img className='work-title' src={sandboxTitle} alt="placeholder"></img>
-          <li className="example">
-            <img className='work-img' src={calculator} alt="calculator"></img>
+          <li className="li-project">
+            <div className='div-project'>
+              <img className='work-title' src={sandboxTitle} alt="placeholder"></img>
+              <img className='work-img' src={calculator} alt="calculator"></img>
+            </div>
           </li>
         </ul>
       </div>
