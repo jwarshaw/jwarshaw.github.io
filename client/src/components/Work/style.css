@@ -24,3 +24,7 @@ ul.work-list li {
   padding: 1px;
   border: 1px solid #b3b3b3;
 }
+.description {
+  width: 350px;
+  font-size: 16px;
+}
