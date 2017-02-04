@@ -1,13 +1,18 @@
 ul.footer {
-  position: absolute;
-  right: 0px;
-  bottom: 10px;
-  left: 0px;
+	margin: 0px;
+	padding: 0px;
+  width: 100%;
+  height: 60px;
   text-align: center;
 }
 ul.footer li {
   display: inline;
   list-style-type: none;
   padding: 0px;
-  margin: 5px;
+  margin: 0px 5px 0px 5px;
+}
+ul.footer li a {
+	margin: 0px;
+  padding: 0px;
+  display: inline-block;
 }

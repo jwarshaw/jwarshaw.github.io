@@ -1,9 +1,6 @@
 import React, { Component } from 'react';
 import './style.css';
 
-import Header from '../Header/index.js';
-import Footer from '../Footer/index.js';
-
 import textwall from '../../images/textwall.png';
 
 export default class About extends Component {
@@ -14,15 +11,7 @@ export default class About extends Component {
   render() {
     return (
       <div className='About'>
-        <div>
-          <Header />
-        </div>
-        <div className="about-content">
-          <img id='text-wall' src={textwall} alt='wall of text'></img>
-        </div>
-        <div>
-          <Footer />
-        </div>
+        <img id='text-wall' src={textwall} alt='wall of text'></img>
       </div>
     );
   }

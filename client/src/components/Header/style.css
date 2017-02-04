@@ -1,25 +1,28 @@
 ul.header {
-  /*background-color: rgba(0,0,0,0);*/
-  text-align: right;
+  margin: 0px;
   padding: 0px;
-  margin: 0px auto;
+  height: 60px;
+  float: right;
+  list-style-type: none;
+  overflow: hidden;
 }
 ul.header li {
-  display: inline;
-  list-style-type: none;
-  padding: 0px;
+  float: left;
 }
 ul.header li a {
-  padding: 0px;
-  display: inline-block;
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  margin:0px;
+  padding: 14px 5px;
+}
+li a:hover {
+  -webkit-filter : brightness(1.2);
+  filter : brightness(1.2);
 }
 .active {
-  -webkit-filter : hue-rotate(150deg);
-  filter : hue-rotate(150deg);
+  /*add underline*/
 }
 .navBut {
   height: 28px;
-}
-img {
-	margin: 5px;
 }

@@ -1,11 +1,7 @@
-.App {
+.Home {
   text-align: center;
-  padding: 20px;
-  height: 100vh;
-}
-.content {
-  margin: 0px auto;
-  padding-top: 150px;
+  margin-top: 12%;
+  padding: 0px;
 }
 
 #hi {
