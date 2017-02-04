@@ -6,8 +6,8 @@ import email from '../../images/email.png';
 import message from '../../images/message.png';
 
 export default class Form extends Component {
-  constructor(props) {
-    super(props)
+  constructor() {
+    super()
     this.state = {name: '', email: '',  message: ''};
   
     this.handleNameChange = this.handleNameChange.bind(this);
