@@ -39,7 +39,9 @@ export default class Work extends Component {
             <div className='div-project'>
               <img className='work-title' src={sandboxTitle} alt="placeholder"></img>
               <img className='work-img' src={calculator} alt="calculator"></img>
-              <p></p>
+              <p className='description'>
+                Blah blah blah blah to build wikipedia for kids. Features include user authentication and authorization blah blah, admin level access, blah blah, viewable blah blah of entries.
+              </p>
             </div>
           </li>
         </ul>
