@@ -10,7 +10,7 @@ import Contact from './components/Contact';
 const Routes = (props) => (
   <Router {...props}>
     <Route path="/" component={Layout}>
-			<IndexRoute path="/home" component={Home} />
+			<IndexRoute component={Home} />
 	 		<Route path="/about" component={About} />
 	 		<Route path="/work" component={Work} />
 	 		<Route path="/contact" component={Contact} />
