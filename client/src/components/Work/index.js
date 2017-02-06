@@ -5,7 +5,8 @@ import raspberryTitle from '../../images/raspberry.png';
 import raspberry from '../../images/car.png';
 import sandboxTitle from '../../images/sandboxtitle.png';
 import sandbox from '../../images/sandbox.png';
-import calculator from '../../images/calculator.png';
+import legitTitle from '../../images/legitTitle.png';
+import legit from '../../images/legit.png';
 
 
 export default class Work extends Component {
@@ -22,7 +23,7 @@ export default class Work extends Component {
               <img className='work-title' src={raspberryTitle} alt="raspberry drive"></img>
               <img className='work-img' src={raspberry} alt="car"></img>
               <p className='description'>
-                A seven day sprint to design and build a self-driving radio controlled car. In the toolbag: Python, OpenSSH, OpenCV, a Raspberry Pi, a $9 RC car, and tape. Lots of tape.
+                A seven day sprint to build a self-driving RC car. In the toolbag: M2M communication, computer vision, microprocessors, a $9 RC car, and tape. Lots of tape.
               </p>
             </div>
           </li>
@@ -31,16 +32,18 @@ export default class Work extends Component {
               <img className='work-title' src={sandboxTitle} alt="sandbox"></img>
               <img className='work-img' src={sandbox} alt="sandbox"></img>
               <p className='description'>
-                A two day sprint to build wikipedia for kids. Features include user authentication and authorization CRUD basics, admin level access, and stored, viewable past versions of entries.
+                A two day sprint to design wikipedia for kids using RoR. Features include multi-user CRUD functionality, admin level access, and stored, viewable past versions of entries.
               </p>
             </div>
           </li>
           <li className="li-project">
             <div className='div-project'>
-              <img className='work-title' src={sandboxTitle} alt="placeholder"></img>
-              <img className='work-img' src={calculator} alt="calculator"></img>
+              <img className='work-title' src={legitTitle} alt="legit hub"></img>
+              <img className='work-img' src={legit} alt="legit hub"></img>
               <p className='description'>
-                Blah blah blah blah to build wikipedia for kids. Features include user authentication and authorization blah blah, admin level access, blah blah, viewable blah blah of entries.
+                A one day sprint to design an organizational tool for Github Gists using Sinatra, Octocat, and OAuth. 
+                <br/>
+                <br/>
               </p>
             </div>
           </li>
