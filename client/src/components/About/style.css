@@ -1,14 +1,12 @@
 .About {
   z-index: -1;
-  margin: 70px 0px 0px 0px;
+  margin: 0px;
   padding: 0px;
-  height: auto;
-  width: 100%;
-  overflow: hidden;
 }
 
 img#text-wall {
+	display: block;
+	margin: 0px auto;
 	padding: 0px;
-  height: 800px;
-  width: auto;
+	width: 75%;
 }
