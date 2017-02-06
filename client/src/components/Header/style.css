@@ -21,8 +21,8 @@ li a:hover {
   filter : brightness(1.2);
 }
 .active {
-  /*add underline*/
-}
+  -webkit-filter : brightness(1.2);
+  filter : brightness(1.2);}
 .navBut {
   height: 28px;
 }
